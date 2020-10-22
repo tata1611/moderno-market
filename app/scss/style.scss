@@ -129,10 +129,17 @@
         background-color: #fff;
         border: none;
         color: $bg;
+        outline: none;
         cursor: pointer;
         &+button{
             margin-left: 5px;
         }
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+        
+        }
+        
     }
 }
 .products__inner-box{
@@ -189,6 +196,7 @@
     &-autor{
         display: flex;
         align-items: center;
+        max-width: 245px;
         .avatar{
             width: 30px;
             height: 30px;
@@ -205,6 +213,12 @@
         }
 
     }
+    &-star{
+        font-size: 12px;
+        span{
+            color: $bg;
+        }
+    }
 
 }
 .products__bottom-btn{
@@ -217,7 +231,48 @@
          color: $bg;
          cursor: pointer;
          padding: 20px 30px;
+         outline: none;
+         &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+        
+        }
 
     }
 }
 // end products
+
+// start product-slider
+.product-slider{
+    padding: 110px 0 120px 0;
+
+    .slick-dots{
+        text-align: center;
+        margin-top: 50px;
+        li{
+            display: inline-block;
+            margin-right: 3px;
+            margin-left: 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                    
+                }
+            }
+            button{
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                width: 16px;
+                height: 16px;
+                font-size: 0;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                
+            }
+        }
+    }
+}
+
+// end product-slider
+
