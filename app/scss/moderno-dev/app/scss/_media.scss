@@ -1,0 +1,184 @@
+@media(max-width: 1170px){
+    .footer{
+        border-top: 30px solid #fff;
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__inner-col.footer__about{
+        min-width: 100%;
+        margin-bottom: 40px;
+    }
+
+}
+@media(max-width: 1000px){
+    .header__text{
+        display: none;
+    }
+}
+@media(max-width: 860px){
+    .menu__list{
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $bg;
+        border-bottom: 4px solid rgba(255,255,255, .4);
+        li{
+            display: block;
+            &+li{
+                margin: 0;
+            }
+            border-top: 1px solid rgba(255,255,255, .4);
+        }
+        a{
+            display: block;
+            text-align: center;
+            padding: 7px 0px;
+        }
+    }
+
+    .header__menu-btn{
+        display: block;
+        div{
+            width: 25px;
+            height: 2.5px;
+            background-color: #fff;
+            margin-top: 5px;
+        }
+    }
+    .footer__inner-col.footer__social{
+        min-width: 100%;
+        margin-top: 40px;
+    }
+    .footer__inner{
+        justify-content: flex-start;
+    }
+    .footer__inner-col.footer__list{
+        margin-left: 70px;
+    }
+}
+@media(max-width: 700px){
+    .notification__box,
+    .message__box{
+        display: none;
+    }
+}
+@media(max-width: 610px){
+    .footer__inner-col{
+        min-width: 100%;
+    }
+    .footer__inner-col.footer__list{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 570px){
+    .menu__list{
+        top:70px;
+    }
+    .user__box .user__menu{
+        top: 59px;
+    }
+    .header__box-btn{
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: #dbdcdd;
+        position: absolute;
+        right: 0px;   
+        top: 0px;
+        z-index: 4;
+        &::before{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            color: #fff;
+
+        }
+    }
+    .header__box{
+        position: absolute;
+        transition: all .5s;
+        background-color: #fff;
+        height: 70px;
+        left: 100%;
+        right: 0;
+        z-index: 2;
+        height: 70px;
+        &.active{
+            left: 70px;
+        }
+      }
+      .header__logo{
+          margin-left: 60px;
+      }
+      .header{
+          overflow: hidden;
+      }
+      .header__menu-btn{
+          position: absolute;
+          top: 20px;
+          div{
+              background-color: $bg;
+          }
+      }
+      .header__top-inner{
+          height: 70px;
+      }
+      .circle__menu{
+          top: 51px;
+          right: auto;
+          left: -20px;
+      }
+}
+@media(max-width: 490px){
+    .user-info{
+        display: none;
+    }
+    .user-img{
+        margin-right: 0;
+    }
+    .user{
+        margin-left:  20px;
+    }
+    .busket{
+        margin-right: 10px;
+    }
+    .header__box.active{
+        left: 35px; 
+    }
+    .user__box .user__menu{
+        top: 55px;
+    }
+    .user__box .user__menu{
+        left: 0;
+    }
+    .busket__box{
+        margin-right: 5px;
+    }
+    .user{
+        margin-right: 0px;
+        margin-left: 0px;
+    }  
+ 
+}
+@media(max-width: 350px){
+      
+    .header_btn{
+        width: 60px;
+    }
+}
+
+
+@media(min-width: 860px){
+    .menu__list{
+        display: block !important;
+    }
+}
