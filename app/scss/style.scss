@@ -885,7 +885,7 @@ z-index: 2;
     }
 }
 
-.footer__col-social-link{
+.footer__social-link{
     margin-bottom: 33px;
     li{
         display: inline-block;
@@ -1972,9 +1972,217 @@ button.icon-sort{
     }
 }
 
-
-
 // end settings 
+// siart profile 
+.profile__inner{
+    display: flex;
+}
+
+.profile__content {
+    width: 100%;
+}
+
+.profile-status{
+    font-size: 13px;
+    padding: 6px 9px 5px 30px;
+    border: 1px solid #d6d6d6;
+    color: #707070;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        left: 11px;
+        top: 13px;
+        width: 9px;
+        height: 9px;
+        border-radius:50%;
+    }
+}
+.profile-on{
+    &::before{
+        background-color: $green;
+    }
+}
+.profile-off{
+    &::before{
+        background-color: $red;
+    }
+}
+.profile__aside-btn {
+    margin-bottom: 13px;
+    text-align: center;
+}
+.profile__aside-message {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    @include f500;
+    background-color: $text;
+    padding: 18px 10px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+        &::before{
+        position: absolute;
+        content: '\f003';
+        font-family: 'icomoon';
+        top: 17px;
+        left: 48px;
+    }
+}
+.profile__aside-following {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    @include f700;
+    background-color: $green;
+    padding: 18px 10px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    &::before{
+        position: absolute;
+        content: '';
+    }
+}
+.profile__banner{
+    padding: 20px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profile__banner-images{
+    background-image: url(../images/content/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 332px;
+}
+.profile__aside{
+    max-width: 270px;
+    margin-right: 30px;
+    width: 100%;
+    & .footer__social-link{
+        margin-bottom: 30px;
+    }
+}
+.profile__items {
+    display: flex;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+
+}
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    &+.profile__item{
+        border-left: 1px solid #dedede;
+    }
+
+}
+.profile__item-title {
+    font-size: 14px;
+    color: $bg;
+    @include f500;
+}
+.profile__item-content {
+    font-size: 14px;
+    color: #707070;
+    @include f500;
+    &.profile__item-sales{
+        color: $bg;
+    }
+} 
+.profile-settings{
+    .product-one__tabs.setting__tabs{
+        .tabs span{
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 500;
+            color: #707070;
+            position: relative;
+            &.active::before{
+                color: $green;
+            }
+            &::before{
+               top: 15px;
+                font-family: 'icomoon';
+                position: absolute;
+                left: 27px;
+                color: #d0d0d0;
+                font-size: 14px;
+                font-family: 'icomoon';
+            }
+        }
+    }
+}   
+
+.personal-box{
+    background-color: #fff;
+    padding: 35px 40px 25px;
+    border: 1px solid #dedede;
+
+}
+
+.personal-box__title {
+    margin-bottom: 25px;
+    @include f700;
+    font-size: 20px;color: $bg;
+
+}
+.personal-box__text {
+    margin-bottom: 20px;
+    p{
+        color: #707070;
+
+    }
+}
+.personal-box__items {
+}
+.personal-box__item {
+}
+.personal-box__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.personal-box__item-name {
+    @include f500;
+    color: $bg;
+    font-size: 16px;
+    font-style: italic;
+}
+.personal-box__item-number {
+    @include f700;
+    color: $bg;
+    font-size: 16px;
+    
+}
+.personal-box__item-line {
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        height: 15px;
+        border-radius: 3px;
+        background-image: url(../images/pro-bar.jpg);
+        background-repeat: repeat;
+
+    }
+}
+.tab-item {
+}
+
+
+
+
+
+
+// end profile 
 
 
 @import 'media';
