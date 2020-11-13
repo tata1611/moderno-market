@@ -2139,10 +2139,7 @@ button.icon-sort{
 
     }
 }
-.personal-box__items {
-}
-.personal-box__item {
-}
+
 .personal-box__item-head {
     display: flex;
     justify-content: space-between;
@@ -2174,7 +2171,67 @@ button.icon-sort{
 
     }
 }
-.tab-item {
+// end profile 
+// start upload
+.upload__inner {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 110px;
+    button{
+        color: #fff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        margin-left: 220px;
+        cursor: pointer;
+    }
+
+}
+.upload__inner-titlt {
+    padding: 16px 35px 18px;
+    @include f500;
+    font-size: 24px;
+    color: $bg;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 40px;
+}
+.upload__inner-content {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 50px;
+
+}
+.upload__inner-line {
+    margin-bottom: 25px;
+    display: flex;
+    label{
+        min-width: 175px;
+        padding-right: 15px;
+        color: #444;
+        padding-top: 5px;
+        span{
+            color: $green;
+        }
+        &::placeholder{
+            color: #707070;
+        }
+    }
+    select,
+    textarea,
+    input{
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        background-color: #f9f9f9;
+        height: 40px;
+        padding: 0 18px;
+    }
+    textarea{
+        resize: none;
+        padding: 8px 18px;
+        height: 150px;
+    }
+
 }
 
 
@@ -2182,7 +2239,7 @@ button.icon-sort{
 
 
 
-// end profile 
+// end upload 
 
 
 @import 'media';
