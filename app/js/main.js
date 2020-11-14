@@ -42,6 +42,8 @@ $('.product-one__tabs .tab, .setting__tabs.tab').on('click', function(event) {
         $('#'+id).addClass('active-tab').fadeIn();
         return false;
     });
+	$('input[type="file"], select').styler();
+
 
 
 $('.menu__btn').on('click', function(){
